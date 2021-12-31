@@ -39,8 +39,8 @@ public enum Type {
         for (Type t : values()) {
             pattern = Pattern.compile(t.pattern);
             matcher = pattern.matcher(s);
-            if (matcher.matches())
-                return t;
+            if (matcher.matches()){
+                return t;}
         }
 
 

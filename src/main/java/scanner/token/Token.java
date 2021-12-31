@@ -35,8 +35,9 @@ public class Token {
     public int hashCode() {
         final int prime = 31;
         int result = type.hashCode();
-        if(type == Type.KEYWORDS)
+        if(type == Type.KEYWORDS) {
             result = prime * result + (value == null ? 0 : value.hashCode());
+        }
         return result;
     }
 
@@ -44,14 +45,14 @@ public class Token {
         Pattern pattern;
         Matcher matcher;
         for (Type t : Type.values()) {
-            if (t.toString().equals(s))
-                return t;
+            if (t.toString().equals(s)){
+                return t;}
         }
         for (Type t : Type.values()) {
             pattern = Pattern.compile(t.pattern);
             matcher = pattern.matcher(s);
-            if (matcher.matches())
-                return t;
+            if (matcher.matches()){
+                return t;}
         }
 
 //        if (s.equals("class")||s.equals("extends")||s.equals("public")||s.equals("static")||s.equals("void")||s.equals("return")||s.equals("main")||
