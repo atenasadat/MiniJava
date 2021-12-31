@@ -25,14 +25,14 @@ public class Address implements function{
         this.varType = varType;
     }
 
-//    public String toString(){
-//       return this.toString();
-//
-//    }
+    @Override
+    public String toString() {
+        return super.toString();
+    }
 }
 
 
-class Direct extends Address implements function{
+class Direct extends Address {
 
 
     public Direct(int num, VarType varType) {
@@ -45,7 +45,7 @@ class Direct extends Address implements function{
 }
 
 
-class Indirect extends Address implements function{
+class Indirect extends Address {
 
 
     public Indirect(int num, VarType varType) {
@@ -59,7 +59,7 @@ class Indirect extends Address implements function{
 }
 
 
-class Imidiate extends Address implements function{
+class Imidiate extends Address {
 
 
     public Imidiate(int num, VarType varType) {
