@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Stack;
 
 import log.Log;
@@ -15,7 +16,7 @@ import scanner.token.Token;
 
 
 public class Parser {
-  private ArrayList<Rule> rules;
+  private List<Rule> rules;
   private Stack<Integer> parsStack;
   private ParseTable parseTable;
   private lexicalAnalyzer lexicalAnalyzer;
