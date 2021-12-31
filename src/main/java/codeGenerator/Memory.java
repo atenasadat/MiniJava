@@ -74,17 +74,22 @@ class _3AddressCode {
 
     public String toString()
     {
-        if(operation == null) return "";
+        if(operation == null) {
+            return "";
+        }
         StringBuffer res = new StringBuffer("(");
         res.append(operation.toString()).append(",");
-        if(Operand1 != null)
+        if(Operand1 != null){
             res.append(Operand1.toString());
+        }
         res.append(",");
-        if(Operand2 != null)
+        if(Operand2 != null){
             res.append(Operand2.toString());
+        }
         res.append(",");
-        if(Operand3 != null)
+        if(Operand3 != null){
             res.append(Operand3.toString());
+        }
         res.append(")");
 
         return res.toString();
