@@ -173,6 +173,8 @@ public class CodeGenerator {
                     case Int:
                         t = VarType.Int;
                         break;
+                    default:
+                        break;
                 }
                 ss.push(new Address(s.address, t));
 
