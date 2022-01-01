@@ -277,6 +277,8 @@ public class CodeGenerator {
                 case Int:
                     t = VarType.Int;
                     break;
+                default:
+                    break;
             }
             Address param = ss.pop();
             if (param.varType != t) {
