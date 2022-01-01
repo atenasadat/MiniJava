@@ -9,8 +9,13 @@ public class Log {
         this.log = new Log();
         return this.log;
     };
-    public void print(String s)
+    public static void print(String s)
     {
+        this.log.printLog(s);
 //        System.out.println(s);
+    }
+
+    public void printLog(String s){
+        // System.out.println(s);
     }
 }
