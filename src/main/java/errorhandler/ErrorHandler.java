@@ -13,6 +13,9 @@ public class ErrorHandler {
     }
 
     public static void printError(String msg) {
+        if (errorhandler == null){
+            createErrorHandler();
+        }
         errorhandler.printError(msg);
     }
 
