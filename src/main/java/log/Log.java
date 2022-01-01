@@ -5,12 +5,14 @@ package log;
  */
 public class Log {
     private static Log log = null;
-    public static Log createLog(){
+    private static Log createLog(){
         log = new Log();
         return this.log;
     };
-    public static void print(String s)
-    {
+    public static void print(String s){
+        if (log == null){
+            createLog();
+        }
         log.printLog(s);
 //        System.out.println(s);
     }
