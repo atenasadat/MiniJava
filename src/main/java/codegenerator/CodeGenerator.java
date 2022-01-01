@@ -248,6 +248,8 @@ public class CodeGenerator {
                 case Bool:
                     t = VarType.Bool;
                     break;
+                default:
+                    break;
             }
             Address temp = new Address(memory.getTemp(),t);
             ss.push(temp);
